@@ -37,8 +37,8 @@ class Person(UUIDMixin, TimeStampedMixin):
         """Метакласс."""
 
         db_table = 'content"."person'
-        verbose_name = _('Participant')
-        verbose_name_plural = _('Participants')
+        verbose_name = _('Person')
+        verbose_name_plural = _('Persons')
 
     def __str__(self) -> str:
         return self.full_name
