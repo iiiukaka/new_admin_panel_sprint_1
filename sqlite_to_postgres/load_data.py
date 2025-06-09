@@ -1,12 +1,15 @@
 import sqlite3
 
 import psycopg
-from psycopg import ClientCursor, connection as _connection
+from psycopg import ClientCursor
+from psycopg import connection as _connection
 from psycopg.rows import dict_row
 
 
-def load_from_sqlite(connection: sqlite3.Connection, pg_conn: _connection):
-    """Основной метод загрузки данных из SQLite в Postgres"""
+def load_from_sqlite(
+        connection: sqlite3.Connection, pg_conn: _connection
+) -> None:
+    """Основной метод загрузки данных из SQLite в Postgres."""
     # postgres_saver = PostgresSaver(pg_conn)
     # sqlite_loader = SQLiteLoader(connection)
 
