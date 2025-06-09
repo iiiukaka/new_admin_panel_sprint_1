@@ -25,6 +25,9 @@ select=["E3", "E5", "E4", "E7", "E9", "W", "C90", "I", "N", "D", "F", "ANN", "AS
 # Also ignore in all files.
 "__init__.py" = ["E402", "E401"]
 
+[lint.per-file-ignores]  
+"admin.py" = ["D101"]
+
 [lint.flake8-annotations]
 allow-star-arg-any = true
 
