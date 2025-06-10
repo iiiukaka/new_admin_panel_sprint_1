@@ -5,7 +5,7 @@ target-version = "py311"
 # Enable preview features.
 preview = true
 # Содержимое папки migrations в проверку не включаем
-exclude = ["*/migrations"]
+exclude = ["movies_admin/movies/migrations/"]
 
 [format]
 # Enable reformatting of code snippets in docstrings.
@@ -27,6 +27,7 @@ select=["E3", "E5", "E4", "E7", "E9", "W", "C90", "I", "N", "D", "F", "ANN", "AS
 
 [lint.per-file-ignores]  
 "admin.py" = ["D101"]
+"models.py" = ["D101", "D102"]
 
 [lint.flake8-annotations]
 allow-star-arg-any = true
